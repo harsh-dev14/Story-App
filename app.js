@@ -5,6 +5,7 @@ const connectDB = require('./config/db')
 const morgan= require('morgan')
 const passport=require('passport')
 const session = require('express-session')
+const MongoStore = require('connect-mongo')(session)
 const exphps = require('express-handlebars')
 //load config
 dotenv.config({path :'./config/config.env'})
